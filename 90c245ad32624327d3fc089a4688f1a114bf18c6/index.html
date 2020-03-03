@@ -22,7 +22,7 @@
 </head>
 
 <body class="is-home u-galaxy-bg">
-     <div class="nav">
+     <div class="nav" id="nav">
         <a href="https://stvgale.github.io/90c245ad32624327d3fc089a4688f1a114bf18c6/" class="name">Steve.</a>
         <div id="mnu-btn" onclick="myFunction()">Work</div>
         </div>
@@ -54,8 +54,10 @@
     function myFunction() {
       var x = document.getElementById("work");
       var y = document.getElementById("main");
+      var n = document.getElementById("nav");
 
       y.classList.toggle("open");
+      n.classList.toggle("opennav");
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {
