@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noimageindex">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+   
+    <title>Steve [creative developer, designer, digital artist]</title>
+    <script>
+        document.documentElement.classList.remove('no-js');
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background:#ffffff;
+        }
+    </style>
+</head>
+
+<body class="is-home u-galaxy-bg">
+    <main id="main">
+        <div class="nav">
+        <a href="/" class="name">Steve.</a>
+        <div id="mnu-btn" onclick="myFunction()">Work</div>
+        </div>
+        <footer><a href="#">i</a></footer>
+        <div id="js-canvas-title" class="u-fixed-cnt" aria-label="creative developer, designer, digital artist"></div>
+        <noscript><img src="/images/intro/intro-nojs.png" alt="3D render of typography (creative developer, designer, digital artist) with floating cubes and donuts" width="1278" height="717"></noscript>
+        <div id="work" style="display:none;">
+
+             <div class="list">
+                 <h2 class="page-title">Driven by Curiosity</h2>
+                 <div class="blog-list">
+                     <div class="column">
+                        <div class="blog-item"><a href="/project/apollo.html"><div class="project-image"><img src="/img/apollo.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Apollo Design System</h2><h3>UX</h3></a></div>
+                         
+                         <div class="blog-item"><a href="/project/ikka.html"><div class="project-image"><img src="/img/ikka.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Ikka</h2><h3>UX / UI</h3></a></div>
+                         
+                         <div class="blog-item"><a href="/project/msft.html"><div class="project-image"><img src="/img/msft.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Microsoft Windows</h2><h3>UX / UI</h3></a></div>
+                    </div>
+                     <div class="column right">
+                
+                         
+                   <div class="blog-item"><a href="/project/ikka.html"><div class="project-image"><img src="/img/smartsolve.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Smartsolve</h2><h3>UX</h3></a></div>
+                         
+                         <div class="blog-item"><a href="/project/ikka.html"><div class="project-image"><img src="/img/aspire.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Aspire Curriculum</h2><h3>UX / UI</h3></a></div>
+                         
+                    
+                         
+                         </div>
+                         
+                         
+                   
+            </div>
+</div>
+    </main>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("work");
+      var y = document.getElementById("main");
+
+      y.classList.toggle("open");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }        
+}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="/js/intro-canvas.min.js"></script>
+
+</body>
+
+</html>
