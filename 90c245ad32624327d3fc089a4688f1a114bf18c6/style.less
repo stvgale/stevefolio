@@ -92,10 +92,7 @@ body {
 }
 
 
-.project .open{
-    filter: invert(100%);
-    transition: filter .5s;
-}
+
 
 footer{
     position:fixed;
@@ -357,3 +354,15 @@ main{
 
 
 
+.project .open{
+    filter: invert(100%);
+    transition: filter .5s;
+     color: transparent;
+   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    img{
+        -webkit-filter: blur(8px);
+    }
+    h1,h2,h3{
+         color: transparent;
+    }
+}
