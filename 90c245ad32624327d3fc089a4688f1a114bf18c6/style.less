@@ -103,7 +103,10 @@ body {
 .open #mnu-btn{
     background:pink;
 }
-
+.open #main{
+    filter: invert(100%);
+    transition: filter .5s;
+}
 
 #work {
     position:fixed; 
@@ -130,7 +133,7 @@ body {
 }
 #buff{
     cursor:pointer;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(8px);
         @media only screen and (min-width : 768px) { 
     position:absolute; 
     top:0;
@@ -337,11 +340,4 @@ h1,h2,h3 {
     }
 }
 
-
-
-.open #main{
-    filter: invert(100%);
-    transition: filter .5s;
-    
-}
 
