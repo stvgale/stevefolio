@@ -66,11 +66,8 @@ body {
          top:40px;
          left:60px;
     } 
-    
-    
-    
-    
 }
+
 
 #mnu-btn {
     background:yellow;
@@ -242,7 +239,7 @@ h1,h2,h3 {
         background-position: top center;
         background-size:cover;
         width:100%;
-        height:calc(100vh - 250px);
+        height:642px;
         padding-top:250px;
         @media only screen and (min-width : 768px) { 
             display: flex;
@@ -262,7 +259,7 @@ h1,h2,h3 {
         }
         h2{
              font-size:3.6em;
-            max-width:800px;
+            max-width:600px;
             line-height:1.4em;
         }
     }
@@ -333,6 +330,7 @@ h1,h2,h3 {
     .container{
         max-width:1200px;
         margin:60px auto 100px auto;
+        width:100%;
     }
     .none{
         margin:0 auto 100px auto;
@@ -355,6 +353,7 @@ h1,h2,h3 {
         border-top:solid 3px #000;
         border-bottom:solid 3px #000;
         margin:0;
+        margin-bottom:5px;
         padding:60px 0;
         @media only screen and (min-width : 768px) { 
             display: flex;
@@ -382,10 +381,129 @@ h1,h2,h3 {
     margin:100px 0 10px 0; 
     
 }
+.carousel-btns{
+    position:relative;
+    width:100%;
+    display:block;
+    padding-bottom:60px;
+}
+.carousel-wrapper {
+  overflow: hidden;
+  width: 90%;
+    margin:0 5%;
+    -webkit-box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+    -moz-box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+    box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+}
+.carousel-wrapper * {
+  box-sizing: border-box;
+    
+}
+.carousel {
+  transform-style: preserve-3d;
+}
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  top:0;
+  width: 100%;
+  margin: auto;
+  
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
+}
+.carousel__photo.prev {
+  transform: translateX(-100%); /* Move 'prev' item to the left */
+}
+.carousel__photo.next {
+  transform: translateX(100%); /* Move 'next' item to the right */
+}
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:50%;
+  width: 44px;
+  height: 44px;
+  background-color: #000;
+  transform: translateY(-50%);
+  cursor: pointer; 
+  z-index: 1001; /* Sit on top of everything */
+  color:#fff;
+}
+.carousel__button--prev {
+  left:3%;
+}
+.carousel__button--next {
+  right:3%;
+}
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.insights{
+    margin-top:35px;
+    ul{ list-style: disc;
+        margin-left:15px;
+        max-width:500px;
+        padding-top:10px;
+        li{
+            margin-top:15px;
+           
+        line-height:1.3em;
+        }
+    }
+}
+
+
 .ikka{
     .hero{
         background-image: url(https://www.ikkaconstruction.com/wp-content/themes/ikka/img/homebg.jpg);
     }
 }
+.apollo{
+    .name {
+        color:#fff;
+    }
+     .hero{
+        background-image: url(/90c245ad32624327d3fc089a4688f1a114bf18c6/img/apollo/apollo-h.png);
+        color:#fff;
+       span{
+            @media only screen and (min-width : 768px) { 
+            background:#fff!important;
+            }
+        }
+    }
+}
+.c-logo--scrolled .name{
+        color:#000;
+       
+     transition: color .5s;
+}
+   
+
 
 
