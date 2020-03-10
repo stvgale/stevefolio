@@ -104,7 +104,9 @@ body {
     filter: invert(100%);
     transition: filter .5s;
 }
-
+.c-logo--scrolled.open{
+    .name{color:#fff;}
+}
 #work {
     position:fixed; 
     top:0;
@@ -482,9 +484,206 @@ h1,h2,h3 {
 
 
 
+
+   
+
+
+
+.li{
+    
+    p{
+        margin-top:15px;
+    }
+}
+
+
+
+
+.carousel {
+position:relative;
+    display:block;
+    float:left;
+  width: 100%;
+max-width:1600px;
+    margin:0 auto 60px auto;
+  text-align: center;
+    img{
+        width:100%;
+    }
+}
+
+.carousel-inner {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+    -webkit-box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+    -moz-box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+    box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+    margin:0 auto;
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  animation: 0.5s ease-in-out;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next {
+  display: block;
+}
+
+.carousel-inner > .next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-inner > .to-left {
+  animation-name: left;
+}
+
+.carousel-inner > .from-right {
+  animation-name: right;
+}
+
+.carousel-inner > .to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.carousel-inner > .from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.contain {
+  margin: 0 ;
+}
+
+
+.carousel-control {
+  position: absolute;
+  top: calc(50% - 25px);
+  bottom: 0;
+  left: 30px;
+  width: 50px;
+    height:50px;
+  cursor: pointer;
+   background:#000;
+}
+
+.carousel-control.right {
+  right: 30px;
+  left: auto;
+}
+
+.carousel-control::after,
+.carousel-control::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.carousel-control.right::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.carousel-control > .arrow {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+ 
+  background-size: 26px 20px;
+  opacity: 0.9;
+  transform: translateY(-50%);
+ 
+}
+
+.carousel-control > .arrow:hover {
+  opacity: 0.8;
+}
+
+.carousel-control > .arrow.left {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.carousel-control > .arrow.right {
+  right: 50%;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  transform: translateX(-50%);
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 10px;
+    background:#fff;
+}
+
+.carousel-indicators li.active {
+  background-color: #000;
+}
+
+
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+
+
 .ikka{
     .hero{
         background-image: url(https://www.ikkaconstruction.com/wp-content/themes/ikka/img/homebg.jpg);
+    }
+}
+.smartsolve{
+    .name {
+        color:#fff;
+    }
+    .hero{
+        background-image: url(/90c245ad32624327d3fc089a4688f1a114bf18c6/img/smartsolve/default.png);
+        background-position: left top!important;;
+        color:#fff;
+       span{
+            @media only screen and (min-width : 768px) { 
+            background:#fff!important;
+            }
+        }
     }
 }
 .apollo{
@@ -500,19 +699,31 @@ h1,h2,h3 {
             }
         }
     }
+    .img-ui{
+        width:1600px;
+        img{
+            -webkit-box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+            -moz-box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+            box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+            margin:0 5%;
+            z-index:4;
+            position:relative;
+            float:right;
+            width:1100px;
+            &:last-child{
+                float:left;
+                margin-top:-200px;
+                z-index:2;
+                position:relative;
+                width:1100px;
+            }
+        }
+    }
 }
+
+
 .c-logo--scrolled .name{
         color:#000;
        
      transition: color .5s;
-}
-   
-
-
-
-.li{
-    
-    p{
-        margin-top:15px;
-    }
 }

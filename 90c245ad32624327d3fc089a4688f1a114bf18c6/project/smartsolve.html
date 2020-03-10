@@ -20,7 +20,7 @@
         }
     </style>
 </head>
-    <body class="ikka" id="project">
+    <body class="smartsolve" id="project">
      <div class="nav" id="nav">
         <a href="https://stvgale.github.io/90c245ad32624327d3fc089a4688f1a114bf18c6/" class="name">Steve.</a>
         <div id="mnu-btn" onclick="myFunction()">Work</div>
@@ -216,6 +216,20 @@
           
 }
      
+         var scrollPosition = window.scrollY;
+    var logoContainer = document.getElementById("project");
+
+    window.addEventListener('scroll', function() {
+
+        scrollPosition = window.scrollY;
+
+        if (scrollPosition >= 730) {
+            logoContainer.classList.add('c-logo--scrolled');
+        } else {
+            logoContainer.classList.remove('c-logo--scrolled');
+        }
+
+    });
      
      
      
