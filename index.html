@@ -1,134 +1,73 @@
-
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" class="no-js">
+
 <head>
-<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noimageindex">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+   
+   <title>Steve Gale | Seattle Designer</title>
+    <script>
+        document.documentElement.classList.remove('no-js');
+    </script>
+    
+   <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background:#ffffff;
+        }
+    </style>
 </head>
 
-<style>
+<body class="is-home u-galaxy-bg" id="home">
+     <div class="nav" id="nav">
+        <a href="/" class="name">Steve.</a>
+        <div id="mnu-btn" onclick="myFunction()">Work</div>
+        </div>
+    <main id="main">
+        <div id="js-canvas-title" class="u-fixed-cnt" aria-label="creative developer, designer, digital artist"></div>
+        <noscript><img src="/images/intro/intro-nojs.png" alt="3D render of typography (creative developer, designer, digital artist) with floating cubes and donuts" width="1278" height="717"></noscript>
+           </main>
+        <div id="work" style="display:none;">
+             <div class="list">
+                 <h2 class="page-title">Driven by Curiosity</h2>
+                 <div class="blog-list">
+                     <div class="column">
+                        <div class="blog-item"><a href="/project/apollo"><div class="project-image"><img src="/img/apollo.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Apollo Design System</h2><h3>UX</h3></a></div>
+                         
+                       <div class="blog-item"><a href="/project/doc"><div class="project-image"><img src="/img/doc-management.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Smartsolve: Doc Management</h2><h3>UX</h3></a></div>
 
-body {
+                    </div>
+                     <div class="column right">
+                   <div class="blog-item"><a href="/project/smartsolve"><div class="project-image"><img src="/img/smartsolve.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Smartsolve</h2><h3>UX</h3></a></div>
+                         
+                           <div class="blog-item"><a href="/project/ikka"><div class="project-image"><img src="/img/ikka.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Ikka</h2><h3>UX / UI</h3></a></div>
+                         </div>
+                        </div>
+                </div>
+        </div>
+ 
+    <script>
+    function myFunction() {
+      var x = document.getElementById("work");
+      var y = document.getElementById("home");
 
-	background-image: url('grunge_patterns.jpg');
-	background-attachment: fixed;
-	color: #333;
+
+      y.classList.toggle("open");
+
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }        
 }
-
-.box {
-	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
-}
-
-.lightbox {
-	zoom: 1.5;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(10, 10, 10, 0.8);
-	text-align: center;
-	margin: auto;
-
-}
-
-div.horizontal {
-	display: flex;
-	justify-content: center;
-	height: 100%;
-}
-
-div.vertical {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-}
-
-::-webkit-input-placeholder {
-   color: #955;
-   text-align: center;
-}
-
-::-moz-placeholder {
-   color: #955;
-   text-align: center;
-}
-
-:-ms-input-placeholder {
-   color: #955;
-   text-align: center;
-}
-
-</style>
-
-<body>
-
-	<div id="loginbox" class="lightbox" >
-		<div class="horizontal">
-			<div class="vertical">
-				<div class="box">hi
-					<input style="margin: 16px;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Enter</button>
-					<p id="wrongPassword" style="display: none">wrong password</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-
-
-	 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
-
-	<script type="text/javascript">
-	"use strict";
-
-
-	function loadPage(pwd) {
-
-		var hash= pwd;
-		hash= Sha1.hash(pwd);
-		var url= hash + "/";
-
-		$.ajax({
-			url : url,
-			dataType : "html",
-			success : function(data) {
-
-				window.location= url;
-
-			},
-			error : function(xhr, ajaxOptions, thrownError) {
-
-
-				parent.location.hash= hash;
-
-				//$("#wrongPassword").show();
-				$("#password").attr("placeholder","wrong password");
-				$("#password").val("");
-			}
-		});
-	}
-
-
-	$("#loginbutton").on("click", function() {
-		loadPage($("#password").val());
-	});
-	$("#password").keypress(function(e) {
-		if (e.which == 13) {
-
-			loadPage($("#password").val());
-		}
-	});
-	$("#password").focus();
-
-	</script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://stvgale.github.io/90c245ad32624327d3fc089a4688f1a114bf18c6/js/intro-canvas.min.js"></script>
 
 </body>
+
 </html>
