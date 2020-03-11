@@ -334,12 +334,35 @@ h1,h2,h3 {
         margin:60px auto 100px auto;
         width:100%;
     }
-    .container-split{
-        background:salmon;
-         max-width:1600px;
-        margin:60px auto 100px auto;
-         width:100%;
-    }
+.container-split{
+    max-width:1600px;
+    margin:60px auto 100px auto;
+    width:100%;
+        .content{
+            float:left;
+            width:20%;
+            margin-top:300px;
+            margin-left:10%;
+            p{width:100%;}
+            }
+            .split-imgs{
+            float:right;
+            width:60%;
+            text-align: right;
+                img{
+                max-width:680px;
+                -webkit-box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+                -moz-box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+                box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
+                position:relative;
+                &:last-child{
+                margin-right:200px;
+                z-index:0;
+                margin-top:-1200px;
+                }
+            }
+        }
+}
     .none{
         margin:0 auto 100px auto;
     }
