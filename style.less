@@ -334,6 +334,12 @@ h1,h2,h3 {
         margin:60px auto 100px auto;
         width:100%;
     }
+    .container-split{
+        background:salmon;
+         max-width:1600px;
+        margin:60px auto 100px auto;
+         width:100%;
+    }
     .none{
         margin:0 auto 100px auto;
     }
@@ -378,6 +384,7 @@ h1,h2,h3 {
             flex-grow: 1; 
             h3{
                 font-size:1.8em;
+                line-height:1.2;
             }
         }
     }
@@ -394,8 +401,7 @@ h1,h2,h3 {
 }
 
 .space{
-    margin:100px 0 10px 0; 
-    
+    margin:100px 0 10px 0;   
 }
 
 .insights{
@@ -588,6 +594,30 @@ max-width:1600px;
             @media only screen and (min-width : 768px) { 
             background:#fff!important;
             }
+        }
+    }
+}
+.craft{
+    .name {
+        color:#fff;
+    }
+    .hero{
+        background-image: url(/img/craft/Craft3_hero_image.png);
+        color:#fff;
+       span{
+            @media only screen and (min-width : 768px) { 
+            background:#fff!important;
+            }
+        }
+    }
+    .steps{
+        li:first-child{
+            width:25%;
+        }
+    }
+    .overview{
+        h2{
+            color:#ffc928!important;
         }
     }
 }

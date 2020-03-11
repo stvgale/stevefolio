@@ -217,15 +217,15 @@
                  <h2 class="page-title">Driven by Curiosity</h2>
                  <div class="blog-list">
                      <div class="column">
-                        <div class="blog-item"><a href="../project/apollo"><div class="project-image"><img src="../img/apollo.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Apollo Design System</h2><h3>UX</h3></a></div>
+                        <div class="blog-item"><a href="../project/apollo"><div class="project-image"><img src="/img/apollo.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Apollo Design System</h2><h3>UX</h3></a></div>
                          
-                       <div class="blog-item"><a href="../project/doc"><div class="project-image"><img src="../img/doc-management.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Smartsolve: Doc Management</h2><h3>UX</h3></a></div>
+                       <div class="blog-item"><a href="../project/craft"><div class="project-image"><img src="/img/craft3.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Craft3</h2><h3>UX</h3></a></div>
 
                     </div>
                      <div class="column right">
-                   <div class="blog-item"><a href="../project/smartsolve"><div class="project-image"><img src="../img/smartsolve.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Smartsolve</h2><h3>UX</h3></a></div>
+                   <div class="blog-item"><a href="../project/smartsolve"><div class="project-image"><img src="/img/smartsolve.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Smartsolve</h2><h3>UX</h3></a></div>
                          
-                           <div class="blog-item"><a href="../project/ikka"><div class="project-image"><img src="../img/ikka.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Ikka</h2><h3>UX / UI</h3></a></div>
+                           <div class="blog-item"><a href="../project/ikka"><div class="project-image"><img src="/img/ikka.png" alt="Ikka Construction"><div class="overlay"></div></div><h2>Ikka</h2><h3>UX / UI</h3></a></div>
                          </div>
                         </div>
                 </div>
@@ -234,9 +234,6 @@
     function myFunction() {
       var x = document.getElementById("work");
       var y = document.getElementById("project");
-   
-  
-
       y.classList.toggle("open");
 
       if (x.style.display === "none") {
@@ -258,92 +255,16 @@
         } else {
             logoContainer.classList.remove('c-logo--scrolled');
         }
-
     });
-     
-     
-     
-     
-     var items = document.querySelectorAll('.carousel .item');
-var dots = document.querySelectorAll('.carousel-indicators li');
-var currentItem = 0;
-var isEnabled = true;
-
-function changeCurrentItem(n) {
-	currentItem = (n + items.length) % items.length;
-}
-
-function nextItem(n) {
-	hideItem('to-left');
-	changeCurrentItem(n + 1);
-	showItem('from-right');
-}
-
-function previousItem(n) {
-	hideItem('to-right');
-	changeCurrentItem(n - 1);
-	showItem('from-left');
-}
-
-function goToItem(n) {
-	if (n < currentItem) {
-		hideItem('to-right');
-		currentItem = n;
-		showItem('from-left');
-	} else {
-		hideItem('to-left');
-		currentItem = n;
-		showItem('from-right');
-	}
-}
-
-function hideItem(direction) {
-	isEnabled = false;
-	items[currentItem].classList.add(direction);
-	dots[currentItem].classList.remove('active');
-	items[currentItem].addEventListener('animationend', function() {
-		this.classList.remove('active', direction);
-	});
-}
-
-function showItem(direction) {
-	items[currentItem].classList.add('next', direction);
-	dots[currentItem].classList.add('active');
-	items[currentItem].addEventListener('animationend', function() {
-		this.classList.remove('next', direction);
-		this.classList.add('active');
-		isEnabled = true;
-	});
-}
-
-document.querySelector('.carousel-control.left').addEventListener('click', function() {
-	if (isEnabled) {
-		previousItem(currentItem);
-	}
-});
-
-document.querySelector('.carousel-control.right').addEventListener('click', function() {
-	if (isEnabled) {
-		nextItem(currentItem);
-	}
-});
-
-document.querySelector('.carousel-indicators').addEventListener('click', function(e) {
-	var target = [].slice.call(e.target.parentNode.children).indexOf(e.target);
-	if (target !== currentItem && target < dots.length) {
-		goToItem(target);
-	}
-});
     </script>
  
    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
 <script>
-    new Glide('.glide', {
+new Glide('.glide', {
   perView: 1
 }).mount()
-    
-  new Glide('.glide2').mount()
+
 </script>
 </body>
 
