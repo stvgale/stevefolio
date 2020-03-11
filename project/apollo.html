@@ -136,48 +136,30 @@
             </p>
             </div>
         </div>
-<div class="carousel">
-  <div class="carousel-inner">
-    <div class="item active">
-      <div class="contain">
-       <img src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/screens/files/407253589.png?x-amz-meta-iv=1&response-cache-control=max-age%3D2419200&x-amz-meta-ck=43b43e34f903060bff83c0750b4cd1b7&AWSAccessKeyId=AKIAJFUMDU3L6GTLUDYA&Expires=1585699200&Signature=b6f7L5jH2RdODB5D%2FH7ez9UC%2FW8%3D" />
-      </div>
-    </div>
-    <div class="item">
-      <div class="contain">
-        <img src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/screens/files/407253738.png?x-amz-meta-iv=1&response-cache-control=max-age%3D2419200&x-amz-meta-ck=43b43e34f903060bff83c0750b4cd1b7&AWSAccessKeyId=AKIAJFUMDU3L6GTLUDYA&Expires=1585699200&Signature=cqeZcvSEYkFSNc0p6VqyGum8VlE%3D" />
-      </div>
-    </div>
-    <div class="item">
-      <div class="contain">
-        <img src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/screens/files/407253738.png?x-amz-meta-iv=1&response-cache-control=max-age%3D2419200&x-amz-meta-ck=43b43e34f903060bff83c0750b4cd1b7&AWSAccessKeyId=AKIAJFUMDU3L6GTLUDYA&Expires=1585699200&Signature=cqeZcvSEYkFSNc0p6VqyGum8VlE%3D" />
-      </div>
-    </div>
-      <div class="item">
-      <div class="contain">
-       <img src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/screens/files/407253930.png?x-amz-meta-iv=1&response-cache-control=max-age%3D2419200&x-amz-meta-ck=43b43e34f903060bff83c0750b4cd1b7&AWSAccessKeyId=AKIAJFUMDU3L6GTLUDYA&Expires=1585699200&Signature=wx1ZZcqUKKcMCk61aUvYT9CRg8A%3D" />
-      </div>
-    </div>
-      <div class="item">
-      <div class="contain">
-       <img src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/screens/files/402222137.png?x-amz-meta-iv=1&response-cache-control=max-age%3D2419200&x-amz-meta-ck=43b43e34f903060bff83c0750b4cd1b7&AWSAccessKeyId=AKIAJFUMDU3L6GTLUDYA&Expires=1585699200&Signature=wOUMzEonVIA7PczbZO2s8f09yAI%3D" />
-      </div>
-    </div>
+         <div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide"><img src="../img/apollo/color.png" /></li>
+      <li class="glide__slide"><img src="../img/apollo/doc.png" /></li>
+      <li class="glide__slide"><img src="../img/apollo/table.png" /></li>
+      <li class="glide__slide"><img src="../img/apollo/check.png" /></li>
+    </ul>
   </div>
-  <div class="carousel-control left">
-    <div class="arrow left"></div>
+             <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
   </div>
-  <div class="carousel-control right">
-    <div class="arrow right"></div>
+             <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0"></button>
+    <button class="glide__bullet" data-glide-dir="=1"></button>
+    <button class="glide__bullet" data-glide-dir="=2"></button>
+    <button class="glide__bullet" data-glide-dir="=3"></button>
   </div>
-  <ol class="carousel-indicators">
-    <li class="active"></li>
-    <li></li>  
-    <li></li>
-    <li></li>
-    <li></li>
-  </ol>
 </div>
+         
+         
+         
+
         
          <div class="container">
             <div class="content">
@@ -354,7 +336,15 @@ document.querySelector('.carousel-indicators').addEventListener('click', functio
 });
     </script>
  
-  
+   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+<script>
+    new Glide('.glide', {
+  perView: 1
+}).mount()
+    
+  new Glide('.glide2').mount()
+</script>
 </body>
 
 </html>
