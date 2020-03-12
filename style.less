@@ -251,12 +251,14 @@ h1,h2,h3 {
        
         background-position: top center;
         background-size:cover;
-        width:100%;
+        
         height:642px;
-        padding-top:250px;
+        padding:180px 10%;
         @media only screen and (min-width : 768px) { 
             display: flex;
             justify-content: center;
+                   padding:250px 0 0 0;
+            width:100%;
         }
         span{
             @media only screen and (min-width : 768px) { 
@@ -271,9 +273,14 @@ h1,h2,h3 {
                 font-size:1.8em;
         }
         h2{
-             font-size:3.6em;
+             font-size:2.6em;
             max-width:600px;
             line-height:1.4em;
+            margin-top:50px;
+            @media only screen and (min-width : 768px) { 
+                font-size:3.6em;
+                margin:0;
+            }
         }
     }
     .overview{
@@ -293,9 +300,10 @@ h1,h2,h3 {
         h2{
             font-size:1.8em;
             color:#a2b9d1;
-            
+            margin-bottom:20px;
             @media only screen and (min-width : 768px) { 
             width:calc(40% - 35px);
+                margin-bottom:0;
             text-align:right;
             float:left;
                 margin-top:20px;
@@ -309,7 +317,10 @@ h1,h2,h3 {
         }
         ul{
             line-height:24px;
-             
+             margin-top:20px;
+                  @media only screen and (min-width : 768px) { 
+               margin-top:0;        
+            }
               &:last-child{
                     border-right:solid 1px transparent;
                 }
@@ -342,9 +353,12 @@ h1,h2,h3 {
     align-items: center;
     }
     .container{
+          margin:60px 10% 100px 10%;
+         @media only screen and (min-width : 768px) { 
         max-width:1200px;
         margin:60px auto 100px auto;
         width:100%;
+        }
     }
 .container-split{
     max-width:1600px;
@@ -395,21 +409,30 @@ h1,h2,h3 {
             }
     }
     .none{
+        margin:0 10% 100px 10%;
+          @media only screen and (min-width : 768px) { 
         margin:0 auto 100px auto;
+        }
     }
     .line{
         border-top:solid 1px #000;
         padding-top:100px;
     }
     .extra{
+           margin:155px 10% 130px 10%;
+         @media only screen and (min-width : 768px) { 
         margin:155px auto 130px auto;
+             
+        }
     }
     .content{
         display:table-cell;
         justify-self: flex-start;
             
         p{
+                  @media only screen and (min-width : 768px) { 
             width:60%;
+            }
         }
         .full{
     width:100%;
@@ -434,9 +457,14 @@ h1,h2,h3 {
             
         }
         li{
-            margin-right:50px;
-            padding-left:10px;
+            
+            margin:20px 10%;
             flex-grow: 1; 
+            margin-bottom:20px;
+             @media only screen and (min-width : 768px) { 
+                 margin:0 50px 0 0;
+            padding-left:10px;
+            }
             h3{
                 font-size:1.8em;
                 line-height:1.2;
@@ -568,23 +596,33 @@ h1,h2,h3 {
         }
     }
     .img-ui{
-        width:1600px;
+        
+
         margin-top:60px;
+        @media only screen and (min-width : 768px) { 
+            width:1600px;
+        }
         img{
             -webkit-box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
             -moz-box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
             box-shadow: 10px 10px 53px 5px rgba(0,0,0,0.21);
-            margin:0 5%;
+            margin:0 10%;
             z-index:4;
             position:relative;
-            float:right;
+           max-width:80%;
+            
+                 @media only screen and (min-width : 768px) { 
             width:1100px;
+                      margin:0 5%;
+            }
             &:last-child{
+                 @media only screen and (min-width : 768px) { 
                 float:left;
                 margin-top:-200px;
                 z-index:2;
                 position:relative;
                 width:1100px;
+                }
             }
         }
     }
@@ -599,7 +637,14 @@ h1,h2,h3 {
      transition: color .5s;
 }
 
-.glide,.glide2,.glide3,.glide4{position:relative;width:100%;box-sizing:border-box; margin-bottom:40px;}.glide *{box-sizing:inherit}.glide__track{overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}.glide__slides--dragging{user-select:none}.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:normal;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows{-webkit-touch-callout:none;user-select:none}.glide__bullets{-webkit-touch-callout:none;user-select:none}.glide--rtl{direction:rtl}
+.glide,.glide2,.glide3,.glide4{position:relative;width:100%;box-sizing:border-box; margin-bottom:40px;}.glide *{box-sizing:inherit}.glide__track{overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}.glide__slides--dragging{user-select:none}.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:normal;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows{
+    -webkit-touch-callout:none;user-select:none;
+display:none;
+ @media only screen and (min-width : 768px) { 
+    display:block; 
+    }
+
+}.glide__bullets{-webkit-touch-callout:none;user-select:none}.glide--rtl{direction:rtl}
 
 .glide__arrow--left{
     left:calc(10% - 50px);
@@ -690,11 +735,15 @@ button{
         width:100%;
         display:inline-block;
         li{
-            list-style: none;
+              list-style: none;
+            display:inline-block;
+              margin-bottom:25px;
+              @media only screen and (min-width : 768px) {
             width:calc(50% - 60px);
             float:left;
             margin-left:60px;
-            margin-bottom:25px;
+          
+            }
                 h3{
                     font-weight:900;
                     float:left;
@@ -711,15 +760,22 @@ button{
 
 footer{
     
-    float:left;
+   padding:60px 10%;
+     color:#fff;
+    @media only screen and (min-width : 768px) { 
+      float:left;
     width:100%;
     margin-top:100px;
-    color:#fff;
-    padding-top:60px;
-    span{height:1px;
+   
+    padding:60px 0 0 0;   
+    }
+    span{
+        @media only screen and (min-width : 768px) { 
+        height:1px;
     width:100%;
     background:#fff;
-    display:inline-block;margin-top:50px;}
+    display:inline-block;margin-top:50px;
+        }}
     h2{
         font-size: 1.8em;
         margin-bottom: 15px;
@@ -765,21 +821,34 @@ footer{
         font-size: 18px;
     line-height: 24px;
    .center{
+       
+         @media only screen and (min-width : 768px) {
             display: flex;
             align-items: center;
             justify-content: center;
        min-height:80vh;
+       }
        .wrap{
+           
+            @media only screen and (min-width : 768px) {
             max-width:1100px;
            display: flex;
   align-items: center;
   justify-content: center;
+           }
        }
        .circle{
+           max-width:80%;
+           margin:150px 10% 50px 10%;
+           
+          
+             @media only screen and (min-width : 768px) {
           width:450px;
            height:450px;
            float:left;
-           border-radius:225px;
+                 margin:0;
+       }
+        
            overflow:hidden;
            text-align:center;
            img{
@@ -789,7 +858,10 @@ footer{
        .words{
            float:left;
            max-width:550px;
-           margin-left:50px;
+           margin:0 10%;
+                   @media only screen and (min-width : 768px) {
+           margin:0 0 0 50px;
+           }
            h2{
                font-size:1.8em;
            }
@@ -802,14 +874,24 @@ footer{
     .contact{
            width:100%;
            border-top:solid 3px #000;
-           height:20vh;
+         display:inline-block;
+        padding-bottom:30px;
+         @media only screen and (min-width : 768px) {
+               height:20vh;
          display: flex;
             align-items: center;
-        a {margin-left:120px;
+             padding:0;
+        }
+        a {
+            margin:30px 0 10px 10%;
              font-weight:900;
         font-size:1.8em;
+            display:inline-block;
             text-decoration:none;
             color:#000;
+                 @media only screen and (min-width : 768px) {
+                     margin: 0 0 0 120px;
+            }
              &::after{
             content: "\2192";
             margin-left:25px;
@@ -822,9 +904,15 @@ footer{
         }
        }
     .close{
+        position:absolute;
+           right:140px;
+    top:25px;
+         @media only screen and (min-width : 768px) {
        position:absolute;
     right:60px;
-    bottom:60px;
+    bottom:36px;
+              top:auto;
+        }
     height:44px;
     width:44px;
     cursor:pointer;
@@ -848,8 +936,10 @@ footer{
 }
 #about-btn{
     position:absolute;
-    right:60px;
-    bottom:60px;
+    
+     right:140px;
+    top:25px;
+    
     height:44px;
     width:44px;
     cursor:pointer;
@@ -867,6 +957,11 @@ footer{
     svg{
         width:100%;margin:0;
         height:44px;
+    }
+     @media only screen and (min-width : 768px) {
+    right:60px;
+         top:auto;
+    bottom:36px;
     }
 }
 .etr{
