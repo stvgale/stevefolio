@@ -78,7 +78,7 @@ body {
     position:absolute;
     top:20px;
     right:20px;
-     z-index:9999;
+     z-index:9997;
     @media only screen and (min-width : 768px) { 
          position:fixed;
          top:40px;
@@ -473,11 +473,24 @@ h1,h2,h3 {
 
 
 .ikka{
+    .overview{
+        h2{
+            color:#9f8a94!important;
+        }
+    }
     .hero{
         background-image: url(/img/ikka/ikka_hero_image.png);
     }
+     footer{
+        background:#5a404d;
+    }
 }
 .smartsolve{
+     .overview{
+        h2{
+            color:#d558af!important;
+        }
+    }
     .name {
         color:#fff;
     }
@@ -491,8 +504,14 @@ h1,h2,h3 {
             }
         }
     }
+    footer{
+        background:#7e1261;
+    }
 }
 .craft{
+    footer{
+        background:#a35524;
+    }
     .name {
         color:#fff;
     }
@@ -512,11 +531,19 @@ h1,h2,h3 {
     }
     .overview{
         h2{
-            color:#ffc928!important;
+            color:#dc7a3c!important;
         }
     }
 }
 .apollo{
+    .overview{
+        h2{
+            color:#4aa7df!important;
+        }
+    }
+     footer{
+        background:#204fb6;
+    }
     .name {
         color:#fff;
     }
@@ -672,7 +699,7 @@ button{
 }
 
 footer{
-    background:#204fb6;
+    
     float:left;
     width:100%;
     margin-top:100px;
@@ -714,5 +741,52 @@ footer{
             padding-top:5px;
             font-weight:400;
         }
+    }
+}
+#about {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:#fff;
+    z-index:9998;
+    .close{
+        padding:20px 20px 17px 20px;
+        cursor: pointer;
+        font-size:1.2em;
+        font-weight:900;
+        position:absolute;
+        top:20px;
+        right:20px;
+         z-index:9997;
+        @media only screen and (min-width : 768px) { 
+             position:fixed;
+             top:40px;
+             right:60px;
+        } 
+}
+}
+#about-btn{
+    position:absolute;
+    left:60px;
+    bottom:60px;
+    height:44px;
+    width:44px;
+    cursor:pointer;
+    border-radius:44px;
+    border:solid 2px #000;
+    font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif; 
+    line-height:49px;
+    text-align:center;
+    font-style: italic;
+    font-size:28px;
+    &:hover{
+        background:#000;
+        color:#fff;
+    }
+    svg{
+        width:100%;margin:0;
+        height:44px;
     }
 }

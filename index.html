@@ -25,11 +25,16 @@
      <div class="nav" id="nav">
         <a href="/" class="name">Steve.</a>
         <div id="mnu-btn" onclick="myFunction()">Work</div>
+        <div id="about-btn" onclick="abtFunction()">i
+</svg></div>
         </div>
     <main id="main">
         <div id="js-canvas-title" class="u-fixed-cnt" aria-label="creative developer, designer, digital artist"></div>
         <noscript><img src="/images/intro/intro-nojs.png" alt="3D render of typography (creative developer, designer, digital artist) with floating cubes and donuts" width="1278" height="717"></noscript>
            </main>
+    <div id="about"  onclick="abtFunction()" style="display:none;">
+        <div class="close">Close X</div>
+    </div>
         <div id="work" style="display:none;">
             <div id="buff" onclick="myFunction()"></div>
              <div class="list">
@@ -57,13 +62,21 @@
 
 
       y.classList.toggle("open");
-
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {
         x.style.display = "none";
       }        
 }
+        function abtFunction() { 
+        var a = document.getElementById("about");
+        if (a.style.display === "none") {
+        a.style.display = "block";
+      } else {
+        a.style.display = "none";
+      }  
+        }
+        
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
     <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
