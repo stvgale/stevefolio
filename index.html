@@ -21,7 +21,10 @@
     </style>
 </head>
 
-<body class="is-home u-galaxy-bg" id="home">
+<body onload="myFunction()" class="is-home u-galaxy-bg" id="home">
+    <div id="loader"></div>
+    
+    <div style="display:none;" id="myDiv" class="animate-bottom">
      <div class="nav" id="nav">
         <a href="/" class="name">Steve.</a>
         <div id="mnu-btn" onclick="myFunction()">Work</div>
@@ -64,7 +67,7 @@
                         </div>
                 </div>
         </div>
- 
+    </div>
     <script>
     function myFunction() {
       var x = document.getElementById("work");
@@ -87,6 +90,17 @@
       }  
         }
         
+        
+        var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 30);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
     <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
