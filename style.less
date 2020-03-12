@@ -822,3 +822,31 @@ footer{
     margin:35px auto 35px auto!important;
 }
 
+
+#loader{
+    font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif;
+     font-style: italic;
+    font-size:1em;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+       height:100vh;
+}
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+  animation-name: animatebottom;
+  animation-duration: 2s
+}
+
+@-webkit-keyframes animatebottom {
+  from { opacity:0 } 
+  to { opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ opacity:0 } 
+  to{ opacity:1 }
+}
