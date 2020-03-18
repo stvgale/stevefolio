@@ -255,6 +255,14 @@ h1,h2,h3 {
         height:642px;
         padding:180px 10%;
         @media only screen and (min-width : 768px) { 
+             display: flex;
+            justify-content: center;
+               
+            width:calc(100% -100px);
+            padding:250px 50px 0 50px;
+        }
+        
+        @media only screen and (min-width : 1408px) { 
             display: flex;
             justify-content: center;
                    padding:250px 0 0 0;
@@ -354,7 +362,10 @@ h1,h2,h3 {
     }
     .container{
           margin:60px 10% 100px 10%;
-         @media only screen and (min-width : 768px) { 
+        @media only screen and (min-width : 768px) {
+             margin:60px 50px 100px 50px;
+        }
+         @media only screen and (min-width : 1408px) { 
         max-width:1200px;
         margin:60px auto 100px auto;
         width:100%;
@@ -390,6 +401,7 @@ h1,h2,h3 {
         }
 }
     .splimgs{padding-bottom:50px;
+        padding-top:50px;
         img{
             
                 max-width:50%;
@@ -410,17 +422,26 @@ h1,h2,h3 {
     }
     .none{
         margin:0 10% 100px 10%;
-          @media only screen and (min-width : 768px) { 
+         @media only screen and (min-width : 768px) { 
+        margin:0 50px 100px 50px;
+             width:calc(100% - 100px)
+        }
+          @media only screen and (min-width : 1408px) { 
         margin:0 auto 100px auto;
         }
     }
+    
     .line{
         border-top:solid 1px #000;
         padding-top:100px;
     }
     .extra{
            margin:155px 10% 130px 10%;
-         @media only screen and (min-width : 768px) { 
+        @media only screen and (min-width : 768px) { 
+              margin:155px 50px 130px 50px;
+        }
+        
+         @media only screen and (min-width : 1408px) { 
         margin:155px auto 130px auto;
              
         }
@@ -763,9 +784,17 @@ footer{
     
    padding:60px 10%;
      color:#fff;
+    
     @media only screen and (min-width : 768px) { 
+       padding:60px 50px;
+         width:calc(100% - 100px);
+    }
+    
+    
+    @media only screen and (min-width : 1408px) { 
       float:left;
-    width:100%;
+   
+         width:100%;
     margin-top:100px;
    
     padding:60px 0 0 0;   
